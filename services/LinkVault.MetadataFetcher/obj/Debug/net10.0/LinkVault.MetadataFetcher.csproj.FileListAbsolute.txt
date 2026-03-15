@@ -1,0 +1,110 @@
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\appsettings.json
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\LinkVault.MetadataFetcher.exe
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\HtmlAgilityPack.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\MassTransit.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\MassTransit.Abstractions.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\MassTransit.RabbitMqTransport.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Configuration.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Diagnostics.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Hosting.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Logging.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Logging.Console.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Logging.EventLog.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Logging.EventSource.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Options.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Primitives.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Polly.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Polly.Core.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\RabbitMQ.Client.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\System.Diagnostics.EventLog.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\System.Threading.RateLimiting.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\runtimes\win\lib\net10.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\runtimes\win\lib\net10.0\System.Diagnostics.EventLog.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\obj\Debug\net10.0\LinkVault.MetadataFetcher.csproj.AssemblyReference.cache
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\obj\Debug\net10.0\LinkVault.MetadataFetcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\obj\Debug\net10.0\LinkVault.MetadataFetcher.AssemblyInfoInputs.cache
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\obj\Debug\net10.0\LinkVault.MetadataFetcher.AssemblyInfo.cs
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\obj\Debug\net10.0\LinkVault.MetadataFetcher.csproj.CoreCompileInputs.cache
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\obj\Debug\net10.0\LinkVaul.12B5E8D8.Up2Date
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\obj\Debug\net10.0\LinkVault.MetadataFetcher.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\obj\Debug\net10.0\refint\LinkVault.MetadataFetcher.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\services\LinkVault.MetadataFetcher\obj\Debug\net10.0\LinkVault.MetadataFetcher.pdb
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\appsettings.json
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\LinkVault.MetadataFetcher.exe
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\LinkVault.MetadataFetcher.deps.json
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\LinkVault.MetadataFetcher.runtimeconfig.json
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\LinkVault.MetadataFetcher.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\LinkVault.MetadataFetcher.pdb
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\HtmlAgilityPack.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\MassTransit.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\MassTransit.Abstractions.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\MassTransit.RabbitMqTransport.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Configuration.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Diagnostics.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Hosting.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Logging.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Logging.Console.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Logging.EventLog.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Logging.EventSource.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Options.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Microsoft.Extensions.Primitives.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Polly.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\Polly.Core.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\RabbitMQ.Client.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\System.Diagnostics.EventLog.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\System.Threading.RateLimiting.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\runtimes\win\lib\net10.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\bin\Debug\net10.0\runtimes\win\lib\net10.0\System.Diagnostics.EventLog.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\obj\Debug\net10.0\LinkVault.MetadataFetcher.csproj.AssemblyReference.cache
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\obj\Debug\net10.0\LinkVault.MetadataFetcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\obj\Debug\net10.0\LinkVault.MetadataFetcher.AssemblyInfoInputs.cache
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\obj\Debug\net10.0\LinkVault.MetadataFetcher.AssemblyInfo.cs
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\obj\Debug\net10.0\LinkVault.MetadataFetcher.csproj.CoreCompileInputs.cache
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\obj\Debug\net10.0\LinkVaul.12B5E8D8.Up2Date
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\obj\Debug\net10.0\LinkVault.MetadataFetcher.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\obj\Debug\net10.0\refint\LinkVault.MetadataFetcher.dll
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\obj\Debug\net10.0\LinkVault.MetadataFetcher.pdb
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\obj\Debug\net10.0\LinkVault.MetadataFetcher.genruntimeconfig.cache
+C:\Users\jorda\Desktop\LinkVault\services\LinkVault.MetadataFetcher\obj\Debug\net10.0\ref\LinkVault.MetadataFetcher.dll

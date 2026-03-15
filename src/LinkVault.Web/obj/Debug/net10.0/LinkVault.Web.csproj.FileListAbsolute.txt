@@ -1,0 +1,106 @@
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\EmbeddedAttribute.cs
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\ValidatableTypeAttribute.cs
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\LinkVault.Web.csproj.AssemblyReference.cache
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\LinkVault.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\LinkVault.Web.AssemblyInfoInputs.cache
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\LinkVault.Web.AssemblyInfo.cs
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\LinkVault.Web.csproj.CoreCompileInputs.cache
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\LinkVault.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\LinkVault.Web.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\refint\LinkVault.Web.dll
+C:\Users\jorda\OneDrive - Vysoké učení technické v Brně\Bussiness\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\LinkVault.Web.pdb
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\bin\Debug\net10.0\appsettings.json
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\bin\Debug\net10.0\LinkVault.Web.staticwebassets.runtime.json
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\bin\Debug\net10.0\LinkVault.Web.staticwebassets.endpoints.json
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\bin\Debug\net10.0\LinkVault.Web.exe
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\bin\Debug\net10.0\LinkVault.Web.deps.json
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\bin\Debug\net10.0\LinkVault.Web.runtimeconfig.json
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\bin\Debug\net10.0\LinkVault.Web.dll
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\bin\Debug\net10.0\LinkVault.Web.pdb
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\bin\Debug\net10.0\MudBlazor.dll
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\EmbeddedAttribute.cs
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\ValidatableTypeAttribute.cs
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\LinkVault.Web.csproj.AssemblyReference.cache
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\LinkVault.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\LinkVault.Web.AssemblyInfoInputs.cache
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\LinkVault.Web.AssemblyInfo.cs
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\LinkVault.Web.csproj.CoreCompileInputs.cache
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\LinkVault.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\scopedcss\Components\Layout\ReconnectModal.razor.rz.scp.css
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\scopedcss\bundle\LinkVault.Web.styles.css
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\scopedcss\projectbundle\LinkVault.Web.bundle.scp.css
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\tzxjg6is5z-{0}-rlc4y2i51z-rlc4y2i51z.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\0wz98yz2xy-{0}-9ci77co5cp-9ci77co5cp.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\o7k4cxtn0u-{0}-7h25wudq12-7h25wudq12.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\56ly5dqsp8-{0}-khy4lop6wu-khy4lop6wu.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\hcd1s0vjvw-{0}-bqjiyaj88i-bqjiyaj88i.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\botur0f1cg-{0}-c2jlpeoesf-c2jlpeoesf.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\jr4k1inmxx-{0}-erw9l3u2r3-erw9l3u2r3.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\9xs8tgk09a-{0}-aexeepp0ev-aexeepp0ev.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\xvlk17d6hc-{0}-d7shbmvgxk-d7shbmvgxk.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\t8z3gvk9oi-{0}-ausgxo2sd3-ausgxo2sd3.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\mo8dh7pzon-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\l321k1rngy-{0}-cosvhxvwiu-cosvhxvwiu.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\00m29kj5ue-{0}-ub07r2b239-ub07r2b239.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\gsxblcvnn0-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\fw2x3x40yc-{0}-b7pk76d08c-b7pk76d08c.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\fbelqag30c-{0}-fsbi9cje9m-fsbi9cje9m.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\kup3s2two3-{0}-rzd6atqjts-rzd6atqjts.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\35qwxdn9yq-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\8b2ayjrij1-{0}-dxx9fxp4il-dxx9fxp4il.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\k2oq0pyyms-{0}-jd9uben2k1-jd9uben2k1.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\e0a0c09suv-{0}-khv3u5hwcm-khv3u5hwcm.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\fngy8q2ep9-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\c5dbz0dqnz-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\akhauqqfhk-{0}-c2oey78nd0-c2oey78nd0.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\6520owniol-{0}-tdbxkamptv-tdbxkamptv.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\ve8b4ssz60-{0}-j5mq2jizvt-j5mq2jizvt.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\iksdrwqnkb-{0}-06098lyss8-06098lyss8.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\0apmy06g2f-{0}-nvvlpmu67g-nvvlpmu67g.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\6hht5ae29f-{0}-s35ty4nyc5-s35ty4nyc5.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\8ynj1gmevh-{0}-pj5nd1wqec-pj5nd1wqec.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\i9xatjbs8s-{0}-46ein0sx1k-46ein0sx1k.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\mip61x384w-{0}-v0zj4ognzu-v0zj4ognzu.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\g140toevsq-{0}-37tfw0ft22-37tfw0ft22.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\8hhzgquzky-{0}-hrwsygsryq-hrwsygsryq.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\ool7lqoa91-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\bhkvkhno3h-{0}-ft3s53vfgj-ft3s53vfgj.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\4n46ct77zp-{0}-6cfz1n2cew-6cfz1n2cew.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\9wnua5ndb4-{0}-6pdc2jztkx-6pdc2jztkx.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\40qpu2yo3e-{0}-493y06b0oq-493y06b0oq.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\x6tuulvntu-{0}-iovd86k7lj-iovd86k7lj.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\fjw25ff5x8-{0}-vr1egmr9el-vr1egmr9el.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\iikhywnf30-{0}-kbrnm935zg-kbrnm935zg.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\xpeu0gn2k3-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\kafdx6302n-{0}-y7v9cxd14o-y7v9cxd14o.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\8yvxgucsl5-{0}-notf2xhcfb-notf2xhcfb.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\i5mufrkdcy-{0}-h1s4sie4z3-h1s4sie4z3.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\2qa8eku8m8-{0}-63fj8s7r0e-63fj8s7r0e.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\k5iwmp62cr-{0}-0j3bgjxly4-0j3bgjxly4.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\egtmr9od60-{0}-abdmv1u4y3-abdmv1u4y3.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\faa0m0cpto-{0}-ax6tuj8tun-ax6tuj8tun.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\x63onqsp15-{0}-zr4b1gdhaw-zr4b1gdhaw.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\9p55eom0b8-{0}-5nhh3c1wtf-5nhh3c1wtf.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\compressed\zrfip21cye-{0}-5nhh3c1wtf-5nhh3c1wtf.gz
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\LinkVaul.88D57340.Up2Date
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\LinkVault.Web.dll
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\refint\LinkVault.Web.dll
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\LinkVault.Web.pdb
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\LinkVault.Web.genruntimeconfig.cache
+C:\Users\jorda\Desktop\LinkVault\src\LinkVault.Web\obj\Debug\net10.0\ref\LinkVault.Web.dll

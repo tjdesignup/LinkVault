@@ -1,0 +1,21 @@
+<Solution>
+  <Folder Name="/services/">
+    <Project Path="services/LinkVault.MetadataFetcher/LinkVault.MetadataFetcher.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/LinkVault.API/LinkVault.API.csproj" />
+    <Project Path="src/LinkVault.Application/LinkVault.Application.csproj" />
+    <Project Path="src/LinkVault.Domain/LinkVault.Domain.csproj" />
+    <Project Path="src/LinkVault.Infrastructure/LinkVault.Infrastructure.csproj" />
+    <Project Path="src/LinkVault.Web/LinkVault.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/LinkVault.API.Tests/LinkVault.API.Tests.csproj" />
+    <Project Path="tests/LinkVault.Application.Tests/LinkVault.Application.Tests.csproj" />
+    <Project Path="tests/LinkVault.Domain.Tests/LinkVault.Domain.Tests.csproj" />
+    <Project Path="tests/LinkVault.E2E.Tests/LinkVault.E2E.Tests.csproj" />
+    <Project Path="tests/LinkVault.Infrastructure.Tests/LinkVault.Infrastructure.Tests.csproj" />
+    <Project Path="tests/LinkVault.MetadataFetcher.Tests/LinkVault.MetadataFetcher.Tests.csproj" />
+    <Project Path="tests/LinkVault.Web.Tests/LinkVault.Web.Tests.csproj" />
+  </Folder>
+</Solution>
