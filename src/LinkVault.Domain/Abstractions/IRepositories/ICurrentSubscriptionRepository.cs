@@ -13,6 +13,6 @@ public interface ICurrentSubscriptionRepository : IRepository<CurrentSubscriptio
         CancellationToken cancellationToken = default);
 
     Task AddEventAsync(
-        CurrentSubscriptionEntity subscriptionEvent,
+        SubscriptionEventEntity subscriptionEvent,
         CancellationToken cancellationToken = default);
 }

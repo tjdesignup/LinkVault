@@ -1,4 +1,5 @@
 using LinkVault.Application.Abstractions;
+using LinkVault.Application.DTOs;
 using LinkVault.Domain.Abstractions;
 using LinkVault.Domain.Abstractions.IRepositories;
 using LinkVault.Domain.Entities;
@@ -15,14 +16,14 @@ public class RequestEmailChangeHandler(
     IEncryptionService encryptionService,
     IEmailService emailService,
     ICurrentUser currentUser)
-    : IRequestHandler<RequestEmailChangeCommand, string>
+    : IRequestHandler<RequestEmailChangeCommand, MessageDto>
 {
-    public async Task<string> Handle(
+    public async Task<MessageDto> Handle(
         RequestEmailChangeCommand command,
         CancellationToken cancellationToken)
     {
         var user = await userRepository.FindByIdAsync(currentUser.UserId, cancellationToken)
-            ?? throw new InvalidOperationException("User not found.");
+            ?? throw new ResourceNotFoundException("User", currentUser.UserId);
 
         if (!encryptionService.VerifyPassword(command.CurrentPassword, user.PasswordHash))
             throw new InvalidPasswordException();
@@ -65,6 +66,6 @@ public class RequestEmailChangeHandler(
             confirmationLink,
             cancellationToken);
 
-        return "Email change requested successfully";
+        return new MessageDto("Email change requested successfully");
     }
 }

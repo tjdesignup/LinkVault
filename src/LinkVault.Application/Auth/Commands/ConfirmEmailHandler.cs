@@ -5,8 +5,7 @@ using LinkVault.Domain.Abstractions;
 using MediatR;
 using LinkVault.Application.Abstractions;
 using LinkVault.Domain.Entities;
-using System.ComponentModel.Design;
-using LinkVault.Domain.ValueObjects;
+using LinkVault.Application.DTOs;
 
 namespace LinkVault.Application.Auth.Commands;
 
@@ -16,9 +15,9 @@ public class ConfirmEmailHandler(
     IEncryptionService encryptionService,
     IUnitOfWork unitOfWork,
     IEmailService emailService)
-    : IRequestHandler<ConfirmEmailCommand, string>
+    : IRequestHandler<ConfirmEmailCommand, MessageDto>
 {
-    public async Task<string> Handle(
+    public async Task<MessageDto> Handle(
         ConfirmEmailCommand command,
         CancellationToken cancellationToken)
     {
@@ -46,7 +45,7 @@ public class ConfirmEmailHandler(
 
             await tokenRepository.AddAsync(newToken, cancellationToken);
 
-            var userForConfirmation = await userRepository.FindByIdAsync(token.UserId, cancellationToken) ?? throw new InvalidRegisterException("User with this email is not registered.");
+            var userForConfirmation = await userRepository.FindByIdAsync(token.UserId, cancellationToken) ?? throw new ResourceNotFoundException("User", token.UserId);
             
             var plainDek = encryptionService.DecryptDek(userForConfirmation.EncryptedDek);
             var confirmationEmail = encryptionService.Decrypt(userForConfirmation.EmailEncrypted, plainDek);
@@ -62,11 +61,11 @@ public class ConfirmEmailHandler(
             throw new ConfirmationTokenExpiredException();
         }
 
-        var user = await userRepository.FindByIdAsync(token.UserId, cancellationToken) ?? throw new InvalidRegisterException("User with this email is not registered.");
+        var user = await userRepository.FindByIdAsync(token.UserId, cancellationToken) ?? throw new ResourceNotFoundException("User", token.UserId);
         user.ConfirmEmail();
 
         await unitOfWork.SaveChangesAsync(cancellationToken);
 
-        return "Email byl úspěšně potvrzen. Nyní se můžete přihlásit.";
+        return new MessageDto("Email was successfully confirmed. You can now log in.");
     }
 }

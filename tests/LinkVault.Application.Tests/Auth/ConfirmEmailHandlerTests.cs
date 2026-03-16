@@ -52,7 +52,9 @@ public class ConfirmEmailHandlerTests
     {
         var result = await _handler.Handle(ValidCommand(), CancellationToken.None);
 
-        result.Should().NotBeNullOrEmpty();
+        result.Message.Should().NotBeNull();
+        result.Message.Should().ContainEquivalentOf("Email");
+        result.Message.Should().Contain("confirmed");
     }
 
     [Fact]
@@ -201,7 +203,7 @@ public class ConfirmEmailHandlerTests
 
         var act = async () => await _handler.Handle(ValidCommand(), CancellationToken.None);
 
-        await act.Should().ThrowAsync<InvalidRegisterException>();
+        await act.Should().ThrowAsync<ResourceNotFoundException>();
     }
 
     private static EmailConfirmationTokenEntity CreateValidToken()

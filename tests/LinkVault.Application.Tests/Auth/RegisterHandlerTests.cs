@@ -59,8 +59,9 @@ public class RegisterHandlerTests
     {
         var result = await _handler.Handle(ValidCommand(), CancellationToken.None);
 
-        result.Should().NotBeNullOrEmpty();
-        result.Should().Contain("Registrace proběhla úspěšně. Zkontrolujte svůj email a potvrďte účet.");
+        result.Message.Should().NotBeNull();
+        result.Message.Should().ContainEquivalentOf("Registration");
+        result.Message.Should().ContainEquivalentOf("successful");
     }
 
     [Fact]

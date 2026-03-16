@@ -1,3 +1,4 @@
+using LinkVault.Application.DTOs;
 using LinkVault.Domain.Abstractions;
 using LinkVault.Domain.Abstractions.IRepositories;
 using LinkVault.Domain.Enums;
@@ -11,9 +12,9 @@ public class ConfirmEmailChangeHandler(
     IUserRepository userRepository,
     IRefreshTokenRepository refreshTokenRepository,
     IUnitOfWork unitOfWork)
-    : IRequestHandler<ConfirmEmailChangeCommand, string>
+    : IRequestHandler<ConfirmEmailChangeCommand, MessageDto>
 {
-    public async Task<string> Handle(
+    public async Task<MessageDto> Handle(
         ConfirmEmailChangeCommand command,
         CancellationToken cancellationToken)
     {
@@ -25,7 +26,7 @@ public class ConfirmEmailChangeHandler(
         token.Use();
 
         var user = await userRepository.FindByIdAsync(token.UserId, cancellationToken)
-            ?? throw new InvalidOperationException($"User {token.UserId} not found.");
+            ?? throw new ResourceNotFoundException("User", token.UserId);
 
         user.ConfirmEmailChange();
 
@@ -33,6 +34,6 @@ public class ConfirmEmailChangeHandler(
 
         await unitOfWork.SaveChangesAsync(cancellationToken);
 
-        return "Email change confirmed successfully.";
+        return new MessageDto("Email change confirmed successfully.");
     }
 }

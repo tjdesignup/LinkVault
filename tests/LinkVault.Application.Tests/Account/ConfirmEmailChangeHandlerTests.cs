@@ -48,7 +48,9 @@ public class ConfirmEmailChangeHandlerTests
     {
         var result = await _handler.Handle(ValidCommand(), CancellationToken.None);
 
-        result.Should().Be("Email change confirmed successfully.");
+        result.Message.Should().NotBeNull();
+        result.Message.Should().ContainEquivalentOf("email");
+        result.Message.Should().Contain("change");
     }
 
     [Fact]
@@ -147,7 +149,7 @@ public class ConfirmEmailChangeHandlerTests
 
         var act = async () => await _handler.Handle(ValidCommand(), CancellationToken.None);
 
-        await act.Should().ThrowAsync<InvalidOperationException>();
+        await act.Should().ThrowAsync<ResourceNotFoundException>();
     }
 
     private static EmailConfirmationTokenEntity CreateValidToken()

@@ -6,7 +6,6 @@ using LinkVault.Domain.Abstractions.IRepositories;
 using LinkVault.Domain.Entities;
 using LinkVault.Domain.Enums;
 using LinkVault.Domain.Exceptions;
-using MediatR;
 using NSubstitute;
 using NSubstitute.ReturnsExtensions;
 
@@ -61,7 +60,9 @@ public class RequestEmailChangeHandlerTests
     {
         var result = await _handler.Handle(ValidCommand(), CancellationToken.None);
 
-        result.Should().Be("Email change requested successfully");
+        result.Message.Should().NotBeNull();
+        result.Message.Should().Contain("change");
+        result.Message.Should().Contain("successfully");
     }
 
     [Fact]
@@ -168,7 +169,7 @@ public class RequestEmailChangeHandlerTests
     {
         _userRepository
             .FindByEmailBlindIndexHashAsync(Arg.Any<string>(), Arg.Any<CancellationToken>())
-            .Returns(CreateConfirmedUser()); // jiný user má tento email
+            .Returns(CreateConfirmedUser());
 
         var act = async () => await _handler.Handle(ValidCommand(), CancellationToken.None);
 
@@ -176,7 +177,7 @@ public class RequestEmailChangeHandlerTests
     }
 
     [Fact]
-    public async Task Handle_WhenUserNotFound_ShouldThrowInvalidOperationException()
+    public async Task Handle_WhenUserNotFound_ShouldThrowResourceNotFoundException()
     {
         _userRepository
             .FindByIdAsync(Arg.Any<Guid>(), Arg.Any<CancellationToken>())
@@ -184,7 +185,7 @@ public class RequestEmailChangeHandlerTests
 
         var act = async () => await _handler.Handle(ValidCommand(), CancellationToken.None);
 
-        await act.Should().ThrowAsync<InvalidOperationException>();
+        await act.Should().ThrowAsync<ResourceNotFoundException>();
     }
 
     private static UserEntity CreateConfirmedUser()

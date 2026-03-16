@@ -4,6 +4,7 @@ using LinkVault.Application.DTOs;
 using LinkVault.Domain.Abstractions;
 using LinkVault.Domain.Abstractions.IRepositories;
 using LinkVault.Domain.ValueObjects;
+using LinkVault.Domain.Exceptions;
 using MediatR;
 
 namespace LinkVault.Application.Links.Commands;
@@ -20,10 +21,10 @@ public class UpdateLinkHandler(
         CancellationToken cancellationToken)
     {
         var link = await linkRepository.FindByIdAsync(command.LinkId, cancellationToken)
-            ?? throw new InvalidOperationException("Link not found.");
+            ?? throw new ResourceNotFoundException("Link", command.LinkId);
 
         if (link.UserId != currentUser.UserId)
-            throw new InvalidOperationException("Link belongs to another user.");
+            throw new ResourceForbiddenException("Link");
 
         var tags = command.Tags.Select(t => new Tag(t)).ToList();
         link.UpdateDetails(new Url(command.Url), command.Title, command.Note, tags);

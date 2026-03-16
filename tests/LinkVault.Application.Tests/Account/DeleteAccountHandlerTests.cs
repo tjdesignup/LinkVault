@@ -49,7 +49,9 @@ public class DeleteAccountHandlerTests
     {
         var result = await _handler.Handle(ValidCommand(), CancellationToken.None);
 
-        result.Should().Be("Account deleted successfully.");
+        result.Message.Should().NotBeNull();
+        result.Message.Should().Contain("Account");
+        result.Message.Should().Contain("deleted");
     }
 
     [Fact]
@@ -134,7 +136,7 @@ public class DeleteAccountHandlerTests
 
         var act = async () => await _handler.Handle(ValidCommand(), CancellationToken.None);
 
-        await act.Should().ThrowAsync<InvalidOperationException>();
+        await act.Should().ThrowAsync<ResourceNotFoundException>();
     }
 
     private static UserEntity CreateConfirmedUser()

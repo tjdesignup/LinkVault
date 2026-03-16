@@ -5,6 +5,7 @@ using LinkVault.Application.DTOs;
 using LinkVault.Domain.Abstractions;
 using LinkVault.Domain.Abstractions.IRepositories;
 using LinkVault.Domain.Entities;
+using LinkVault.Domain.Exceptions;
 using NSubstitute;
 using NSubstitute.ReturnsExtensions;
 
@@ -76,7 +77,6 @@ public class UpdateProfileHandlerTests
     {
         await _handler.Handle(ValidCommand(), CancellationToken.None);
 
-        // FirstName + Surname — dvě volání Encrypt
         _encryptionService.Received(2).Encrypt(
             Arg.Any<string>(),
             Arg.Any<string>());
@@ -91,7 +91,7 @@ public class UpdateProfileHandlerTests
     }
 
     [Fact]
-    public async Task Handle_WhenUserNotFound_ShouldThrowInvalidOperationException()
+    public async Task Handle_WhenUserNotFound_ShouldThrowResourceNotFoundException()
     {
         _userRepository
             .FindByIdAsync(Arg.Any<Guid>(), Arg.Any<CancellationToken>())
@@ -99,7 +99,7 @@ public class UpdateProfileHandlerTests
 
         var act = async () => await _handler.Handle(ValidCommand(), CancellationToken.None);
 
-        await act.Should().ThrowAsync<InvalidOperationException>();
+        await act.Should().ThrowAsync<ResourceNotFoundException>();
     }
 
     private static UserEntity CreateConfirmedUser()

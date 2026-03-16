@@ -9,4 +9,9 @@ public interface IQuarantineStorageService
     Task DeleteAsync(
         string storedFileName,
         CancellationToken cancellationToken = default);
+
+    Task SaveAsync(
+        string storedFileName,
+        Stream fileStream,
+        CancellationToken cancellationToken = default);
 }

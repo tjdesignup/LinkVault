@@ -5,6 +5,7 @@ using LinkVault.Domain.Exceptions;
 using LinkVault.Domain.Abstractions.IRepositories;
 using LinkVault.Domain.Abstractions;
 using MediatR;
+using LinkVault.Application.DTOs;
 
 namespace LinkVault.Application.Auth.Commands;
 
@@ -15,9 +16,9 @@ public class RegisterHandler(
     IUnitOfWork unitOfWork,
     IEncryptionService encryptionService,
     IEmailService emailService)
-    : IRequestHandler<RegisterCommand, string>
+    : IRequestHandler<RegisterCommand, MessageDto>
 {
-    public async Task<string> Handle(
+    public async Task<MessageDto> Handle(
         RegisterCommand command,
         CancellationToken cancellationToken)
     {
@@ -68,6 +69,6 @@ public class RegisterHandler(
             confirmationLink,
             cancellationToken);
 
-        return "Registrace proběhla úspěšně. Zkontrolujte svůj email a potvrďte účet.";
+        return new MessageDto("Registration was successful. Please check your email and confirm your account.");
     }
 }

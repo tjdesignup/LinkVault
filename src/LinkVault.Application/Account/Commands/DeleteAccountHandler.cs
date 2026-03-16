@@ -1,4 +1,5 @@
 using LinkVault.Application.Abstractions;
+using LinkVault.Application.DTOs;
 using LinkVault.Domain.Abstractions;
 using LinkVault.Domain.Abstractions.IRepositories;
 using LinkVault.Domain.Exceptions;
@@ -12,14 +13,14 @@ public class DeleteAccountHandler(
     IUnitOfWork unitOfWork,
     IEncryptionService encryptionService,
     ICurrentUser currentUser)
-    : IRequestHandler<DeleteAccountCommand, string>
+    : IRequestHandler<DeleteAccountCommand, MessageDto>
 {
-    public async Task<string> Handle(
+    public async Task<MessageDto> Handle(
         DeleteAccountCommand command,
         CancellationToken cancellationToken)
     {
         var user = await userRepository.FindByIdAsync(currentUser.UserId, cancellationToken)
-            ?? throw new InvalidOperationException("User not found.");
+            ?? throw new ResourceNotFoundException("User", currentUser.UserId);
 
         if (!encryptionService.VerifyPassword(command.CurrentPassword, user.PasswordHash))
             throw new InvalidPasswordException();
@@ -30,6 +31,6 @@ public class DeleteAccountHandler(
 
         await unitOfWork.SaveChangesAsync(cancellationToken);
 
-        return "Account deleted successfully.";
+        return new MessageDto("Account deleted successfully.");
     }
 }

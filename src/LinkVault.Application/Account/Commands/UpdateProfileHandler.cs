@@ -3,6 +3,7 @@ using LinkVault.Application.DTOs;
 using LinkVault.Application.Mappings;
 using LinkVault.Domain.Abstractions;
 using LinkVault.Domain.Abstractions.IRepositories;
+using LinkVault.Domain.Exceptions;
 using MediatR;
 
 namespace LinkVault.Application.Account.Commands;
@@ -19,7 +20,7 @@ public class UpdateProfileHandler(
         CancellationToken cancellationToken)
     {
         var user = await userRepository.FindByIdAsync(currentUser.UserId, cancellationToken)
-            ?? throw new InvalidOperationException("User not found.");
+            ?? throw new ResourceNotFoundException("User", currentUser.UserId);
 
         var plaintextDek = encryptionService.DecryptDek(user.EncryptedDek);
         var firstNameEncrypted = encryptionService.Encrypt(command.FirstName, plaintextDek);

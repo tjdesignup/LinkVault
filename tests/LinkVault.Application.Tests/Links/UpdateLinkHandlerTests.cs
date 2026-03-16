@@ -6,6 +6,7 @@ using LinkVault.Application.Links.Commands;
 using LinkVault.Domain.Abstractions;
 using LinkVault.Domain.Abstractions.IRepositories;
 using LinkVault.Domain.Entities;
+using LinkVault.Domain.Exceptions;
 using LinkVault.Domain.ValueObjects;
 using NSubstitute;
 using NSubstitute.ReturnsExtensions;
@@ -90,7 +91,7 @@ public class UpdateLinkHandlerTests
     }
 
     [Fact]
-    public async Task Handle_WhenLinkNotFound_ShouldThrowInvalidOperationException()
+    public async Task Handle_WhenLinkNotFound_ShouldThrowResourceNotFoundException()
     {
         _linkRepository
             .FindByIdAsync(_linkId, Arg.Any<CancellationToken>())
@@ -98,7 +99,7 @@ public class UpdateLinkHandlerTests
 
         var act = async () => await _handler.Handle(ValidCommand(), CancellationToken.None);
 
-        await act.Should().ThrowAsync<InvalidOperationException>();
+        await act.Should().ThrowAsync<ResourceNotFoundException>();
     }
 
     [Fact]
@@ -108,14 +109,14 @@ public class UpdateLinkHandlerTests
             .FindByIdAsync(_linkId, Arg.Any<CancellationToken>())
             .ReturnsNull();
 
-        await Assert.ThrowsAsync<InvalidOperationException>(
+        await Assert.ThrowsAsync<ResourceNotFoundException>(
             () => _handler.Handle(ValidCommand(), CancellationToken.None));
 
         await _unitOfWork.DidNotReceive().SaveChangesAsync(Arg.Any<CancellationToken>());
     }
 
     [Fact]
-    public async Task Handle_WhenLinkBelongsToAnotherUser_ShouldThrowInvalidOperationException()
+    public async Task Handle_WhenLinkBelongsToAnotherUser_ShouldThrowResourceForbiddenException()
     {
         _linkRepository
             .FindByIdAsync(_linkId, Arg.Any<CancellationToken>())
@@ -123,7 +124,7 @@ public class UpdateLinkHandlerTests
 
         var act = async () => await _handler.Handle(ValidCommand(), CancellationToken.None);
 
-        await act.Should().ThrowAsync<InvalidOperationException>();
+        await act.Should().ThrowAsync<ResourceForbiddenException>();
     }
 
     [Fact]
@@ -133,7 +134,7 @@ public class UpdateLinkHandlerTests
             .FindByIdAsync(_linkId, Arg.Any<CancellationToken>())
             .Returns(CreateLink(Guid.NewGuid()));
 
-        await Assert.ThrowsAsync<InvalidOperationException>(
+        await Assert.ThrowsAsync<ResourceForbiddenException>(
             () => _handler.Handle(ValidCommand(), CancellationToken.None));
 
         await _unitOfWork.DidNotReceive().SaveChangesAsync(Arg.Any<CancellationToken>());

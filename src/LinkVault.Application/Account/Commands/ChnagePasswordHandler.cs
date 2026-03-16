@@ -1,4 +1,5 @@
 using LinkVault.Application.Abstractions;
+using LinkVault.Application.DTOs;
 using LinkVault.Domain.Abstractions;
 using LinkVault.Domain.Abstractions.IRepositories;
 using LinkVault.Domain.Exceptions;
@@ -12,14 +13,14 @@ public class ChangePasswordHandler(
     IUnitOfWork unitOfWork,
     IEncryptionService encryptionService,
     ICurrentUser currentUser)
-    : IRequestHandler<ChangePasswordCommand, string>
+    : IRequestHandler<ChangePasswordCommand, MessageDto>
 {
-    public async Task<string> Handle(
+    public async Task<MessageDto> Handle(
         ChangePasswordCommand command,
         CancellationToken cancellationToken)
     {
         var user = await userRepository.FindByIdAsync(currentUser.UserId, cancellationToken)
-            ?? throw new InvalidOperationException("User not found.");
+            ?? throw new ResourceNotFoundException("UserEntity", currentUser.UserId);
 
         if (!encryptionService.VerifyPassword(command.CurrentPassword, user.PasswordHash))
             throw new InvalidPasswordException();
@@ -34,6 +35,6 @@ public class ChangePasswordHandler(
 
         await unitOfWork.SaveChangesAsync(cancellationToken);
 
-        return "Password changed successfully";
+        return new MessageDto("Password was changed successfully");
     }
 }

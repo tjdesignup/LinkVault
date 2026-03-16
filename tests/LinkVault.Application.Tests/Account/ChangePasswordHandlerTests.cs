@@ -1,4 +1,4 @@
-using System.Data;
+using LinkVault.Application.DTOs;
 using FluentAssertions;
 using LinkVault.Application.Abstractions;
 using LinkVault.Application.Account.Commands;
@@ -62,7 +62,9 @@ public class ChangePasswordHandlerTests
 
         var result = await _handler.Handle(ValidCommand(), CancellationToken.None);
 
-        result.Should().Be("Password changed successfully");
+        result.Message.Should().NotBeNull();
+        result.Message.Should().Contain("successfully");
+        result.Message.Should().ContainEquivalentOf("password");
     }
 
     [Fact]
@@ -151,7 +153,7 @@ public class ChangePasswordHandlerTests
 
         var act = async () => await _handler.Handle(ValidCommand(), CancellationToken.None);
 
-        await act.Should().ThrowAsync<InvalidOperationException>();
+        await act.Should().ThrowAsync<ResourceNotFoundException>();
     }
 
     private static UserEntity CreateConfirmedUser()

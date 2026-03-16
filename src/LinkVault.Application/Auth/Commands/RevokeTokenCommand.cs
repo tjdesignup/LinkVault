@@ -1,3 +1,4 @@
+using LinkVault.Application.DTOs;
 using MediatR;
 
 namespace LinkVault.Application.Auth.Commands;
@@ -5,4 +6,4 @@ namespace LinkVault.Application.Auth.Commands;
 public record RevokeTokenCommand(
     string RefreshToken,
     bool RevokeAll = false
-) : IRequest<Unit>;
+) : IRequest<MessageDto>;

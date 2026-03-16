@@ -67,10 +67,6 @@ public class AddLinkHandlerTests
         Note: null,
         Tags: ["dotnet"]);
 
-    // -------------------------------------------------------
-    // Blok A — úspěšné přidání záložky
-    // -------------------------------------------------------
-
     [Fact]
     public async Task Handle_WhenValidCommand_ShouldReturnLinkDto()
     {
@@ -128,10 +124,6 @@ public class AddLinkHandlerTests
 
         await _unitOfWork.Received(1).SaveChangesAsync(Arg.Any<CancellationToken>());
     }
-
-    // -------------------------------------------------------
-    // Blok B — lock lifecycle
-    // -------------------------------------------------------
 
     [Fact]
     public async Task Handle_WhenValidCommand_ShouldAcquireLockWithCorrectKey()
@@ -197,10 +189,6 @@ public class AddLinkHandlerTests
             Arg.Any<CancellationToken>());
     }
 
-    // -------------------------------------------------------
-    // Blok C — lock expiroval během zpracování
-    // -------------------------------------------------------
-
     [Fact]
     public async Task Handle_WhenLockExpiredDuringProcessing_ShouldThrowInvalidOperationException()
     {
@@ -238,10 +226,6 @@ public class AddLinkHandlerTests
             Arg.Any<CancellationToken>());
     }
 
-    // -------------------------------------------------------
-    // Blok D — lock nedostupný
-    // -------------------------------------------------------
-
     [Fact]
     public async Task Handle_WhenLockNotAcquired_ShouldThrowInvalidOperationException()
     {
@@ -278,10 +262,6 @@ public class AddLinkHandlerTests
             Arg.Any<LinkCreatedEvent>(),
             Arg.Any<CancellationToken>());
     }
-
-    // -------------------------------------------------------
-    // Blok E — free tier limit
-    // -------------------------------------------------------
 
     [Fact]
     public async Task Handle_WhenFreeTierLimitReached_ShouldThrowLinkLimitExceededException()
@@ -322,10 +302,6 @@ public class AddLinkHandlerTests
         await act.Should().NotThrowAsync();
     }
 
-    // -------------------------------------------------------
-    // Helpers
-    // -------------------------------------------------------
-
     private static CurrentSubscriptionEntity CreateFreeSubscription()
         => CurrentSubscriptionEntity.CreateFree(Guid.NewGuid(), "stripe-customer-123");
 
@@ -334,7 +310,7 @@ public class AddLinkHandlerTests
         var userId = Guid.NewGuid();
         var subscription = CurrentSubscriptionEntity.CreateFree(userId, "stripe-customer-123");
         subscription.ApplyEvent(SubscriptionEventEntity.Create(
-            userId,  // ← stejný userId
+            userId,  
             SubscriptionEventType.Activated,
             SubscriptionTier.Pro,
             SubscriptionStatus.Active,

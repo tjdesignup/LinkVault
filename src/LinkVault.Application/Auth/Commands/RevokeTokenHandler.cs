@@ -1,4 +1,5 @@
 using LinkVault.Application.Abstractions;
+using LinkVault.Application.DTOs;
 using LinkVault.Domain.Abstractions;
 using LinkVault.Domain.Abstractions.IRepositories;
 using LinkVault.Domain.Exceptions;
@@ -10,9 +11,9 @@ public class RevokeTokenHandler(
     IRefreshTokenRepository refreshTokenRepository,
     IUnitOfWork unitOfWork,
     ITokenService tokenService)
-    : IRequestHandler<RevokeTokenCommand, Unit>
+    : IRequestHandler<RevokeTokenCommand, MessageDto>
     {
-    public async Task<Unit> Handle(
+    public async Task<MessageDto> Handle(
         RevokeTokenCommand command,
         CancellationToken cancellationToken)
     {
@@ -33,6 +34,6 @@ public class RevokeTokenHandler(
 
         await unitOfWork.SaveChangesAsync(cancellationToken);
 
-        return Unit.Value;
+        return new MessageDto("Device was logged out successfully.");
     }
 }

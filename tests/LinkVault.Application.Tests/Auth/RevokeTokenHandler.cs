@@ -44,7 +44,9 @@ public class RevokeTokenHandlerTests
     {
         var result = await _handler.Handle(ValidCommand(), CancellationToken.None);
 
-        result.Should().Be(Unit.Value);
+        result.Message.Should().NotBeNull();
+        result.Message.Should().Contain("successfully");
+        result.Message.Should().Contain("logged out");
     }
 
     [Fact]
@@ -85,7 +87,9 @@ public class RevokeTokenHandlerTests
     {
         var result = await _handler.Handle(RevokeValidAllCommand(), CancellationToken.None);
 
-        result.Should().Be(Unit.Value);
+        result.Message.Should().NotBeNull();
+        result.Message.Should().Contain("successfully");
+        result.Message.Should().Contain("logged out");
     }
 
     [Fact]

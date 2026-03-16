@@ -1,3 +1,4 @@
+using LinkVault.Application.DTOs;
 using MediatR;
 
 namespace LinkVault.Application.Auth.Commands;
@@ -7,4 +8,4 @@ public record RegisterCommand(
     string Password,
     string FirstName,
     string Surname
-) : IRequest<string>;
+) : IRequest<MessageDto>;
