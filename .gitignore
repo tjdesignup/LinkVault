@@ -1,9 +1,32 @@
+# Build artefakty
 bin/
 obj/
+
+# Visual Studio
 .vs/
 *.user
 *.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+
+# NuGet
+*.nupkg
+*.nuget.props
+*.nuget.targets
+project.nuget.cache
+project.assets.json
+packages/
+
+# Rider
 .idea/
-*.DS_Store
+
+# OS
+.DS_Store
+Thumbs.db
+
+# App settings s tajnými daty
 appsettings.Development.json
 appsettings.Local.json
