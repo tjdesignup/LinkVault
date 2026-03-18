@@ -69,6 +69,10 @@ public class LinkEntityConfiguration : BaseEntityConfiguration<LinkEntity>
                                 .Select(t => new Tag(t))
                                 .ToList());
 
+        builder.Property<NpgsqlTsVector>("SearchVector")
+            .HasColumnName("search_vector")
+            .IsRequired(false);
+
         builder.HasMany<FileAttachmentEntity>()
             .WithOne()
             .HasForeignKey(f => f.LinkId)
