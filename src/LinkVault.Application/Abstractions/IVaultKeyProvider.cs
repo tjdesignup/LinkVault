@@ -13,5 +13,9 @@ public interface IVaultKeyProvider
     Task<string> GetStripeWebhookSecretAsync(CancellationToken ct = default);
     Task<string> GetDatabaseConnectionStringAsync(CancellationToken ct = default);
     Task<string> GetAiApiKeyAsync(CancellationToken ct = default);
+    Task<string> GetR2AccountIdAsync(CancellationToken ct = default);
+    Task<string> GetR2AccessKeyIdAsync(CancellationToken ct = default);
+    Task<string> GetR2SecretAccessKeyAsync(CancellationToken ct = default);
+    Task<string> GetR2BucketNameAsync(CancellationToken ct = default);
     Task<(string Username, string Password)> GetRabbitMqCredentialsAsync(CancellationToken ct = default);
 }

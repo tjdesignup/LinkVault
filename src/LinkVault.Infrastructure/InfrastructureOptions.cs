@@ -37,5 +37,10 @@ public sealed record InfrastructureOptions(
     // RabbitMQ
     string RabbitMqHost,
     string RabbitMqUsername,
-    string RabbitMqPassword
+    string RabbitMqPassword,
+
+    string R2AccountId,
+    string R2AccessKeyId,
+    string R2SecretAccessKey,
+    string R2BucketName
 );

@@ -14,6 +14,7 @@ using LinkVault.Infrastructure.Persistence.Repositories;
 using LinkVault.Infrastructure.Storage;
 using LinkVault.Domain.Abstractions.IRepositories;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,50 +30,6 @@ public static class DependencyInjection
         this IServiceCollection services,
         InfrastructureOptions options)
     {
-        var keyProvider = new VaultKeyProvider(
-                Environment.GetEnvironmentVariable("INFISICAL_CLIENT_ID") ?? null!,
-                Environment.GetEnvironmentVariable("INFISICAL_CLIENT_SECRET") ?? null!,
-                Environment.GetEnvironmentVariable("INFISICAL_PROJECT_ID") ?? null!
-        );
-
-        services.AddSingleton<IVaultKeyProvider>(keyProvider);
-
-        var (user, password) = keyProvider.GetRabbitMqCredentialsAsync().GetAwaiter().GetResult();
-
-        var infraOptions = new InfrastructureOptions(
-            ConnectionString: keyProvider.GetDatabaseConnectionStringAsync().GetAwaiter().GetResult(),
-        
-            MasterKey: keyProvider.GetMasterKeyAsync().GetAwaiter().GetResult(),
-            BlindIndexSecret: keyProvider.GetBlindIndexSecretAsync().GetAwaiter().GetResult(),
-
-            JwtSecret: keyProvider.GetJwtSecretAsync().GetAwaiter().GetResult(),
-            JwtIssuer: Environment.GetEnvironmentVariable("JWT_ISSUER") ?? null!,
-            JwtAudience: Environment.GetEnvironmentVariable("JWT_AUDIENCE") ?? null!,
-
-            RedisConnectionString: keyProvider.GetRedisConnectionStringAsync().GetAwaiter().GetResult(),
-
-            ResendApiKey: keyProvider.GetResendApiKeyAsync().GetAwaiter().GetResult(),
-            EmailFromAddress:keyProvider.GetResendEmailAsync().GetAwaiter().GetResult(),
-
-            StripeSecretKey: keyProvider.GetStripeKeyAsync().GetAwaiter().GetResult(),
-            StripePriceId: keyProvider.GetStripePriceIdAsync().GetAwaiter().GetResult(),
-            StripeSuccessUrl: Environment.GetEnvironmentVariable("STRIPE_SUCCESS_URL") ?? null!,
-            StripeCancelUrl: Environment.GetEnvironmentVariable("STRIPE_CANCEL_URL") ?? null!,
-            StripeWebhookSecret: keyProvider.GetStripeWebhookSecretAsync().GetAwaiter().GetResult(),
-
-            AnthropicApiKey: keyProvider.GetAiApiKeyAsync().GetAwaiter().GetResult(),
-
-            QuarantinePath: Environment.GetEnvironmentVariable("QUARANTINE_PATH") ?? null!,
-            ClamAvHost: Environment.GetEnvironmentVariable("CLAM_AV_HOST") ?? null!, 
-            ClamAvPort: int.Parse(Environment.GetEnvironmentVariable("CLAM_AV_PORT")?? null!), 
-
-            RabbitMqHost: Environment.GetEnvironmentVariable("RABBIT_MQ_HOST") ?? null!, 
-            RabbitMqUsername: user,
-            RabbitMqPassword: password
-
-        );
-
-
         services
             .AddDatabase(options.ConnectionString)
             .AddRepositories()
@@ -85,7 +42,7 @@ public static class DependencyInjection
             .AddAi(options.AnthropicApiKey)
             .AddStorage(options.QuarantinePath, options.ClamAvHost, options.ClamAvPort)
             .AddMessaging(options.RabbitMqHost, options.RabbitMqUsername, options.RabbitMqPassword)
-            .AddBackgroundJobs();
+            .AddBackgroundJobs(options.ConnectionString, options.R2AccountId,options.R2AccessKeyId, options.R2SecretAccessKey,options.R2BucketName);
 
         return services;
     }
@@ -231,10 +188,24 @@ public static class DependencyInjection
     }
 
     private static IServiceCollection AddBackgroundJobs(
-        this IServiceCollection services)
+        this IServiceCollection services,
+        string connectionString,
+        string r2AccountId,
+        string r2AccessKeyId,
+        string r2SecretAccessKey,
+        string r2BucketName)
     {
-        services.AddHostedService<HardDeleteJob>();
+        services.AddHostedService(sp =>
+        new DatabaseBackupJob(
+            connectionString,
+            r2AccountId,
+            r2AccessKeyId,
+            r2SecretAccessKey,
+            r2BucketName,
+            sp.GetRequiredService<ILogger<DatabaseBackupJob>>()));
 
+        services.AddHostedService<HardDeleteJob>();
+        
         return services;
     }
 }

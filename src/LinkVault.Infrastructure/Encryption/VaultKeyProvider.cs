@@ -60,6 +60,15 @@ public sealed class VaultKeyProvider : IVaultKeyProvider
         return (user, pass);
     }
 
+    public async Task<string> GetR2AccountIdAsync(CancellationToken ct = default)
+        => await GetSecretByNameAsync("R2_ACCOUNT_ID");
+    public async Task<string> GetR2AccessKeyIdAsync(CancellationToken ct = default)
+        => await GetSecretByNameAsync("R2_ACCESS_KEY_ID");
+    public async Task<string> GetR2SecretAccessKeyAsync(CancellationToken ct = default)
+        => await GetSecretByNameAsync("R2_SECRET_ACCESS_KEY");
+    public async Task<string> GetR2BucketNameAsync(CancellationToken ct = default)
+        => await GetSecretByNameAsync("R2_BUCKET_NAME");
+
     private async Task<string> GetSecretByNameAsync(string name)
     {
         var options = new GetSecretOptions
