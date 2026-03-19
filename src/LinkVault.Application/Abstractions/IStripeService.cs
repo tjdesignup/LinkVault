@@ -8,6 +8,8 @@ public interface IStripeService
         string stripeCustomerId,
         CancellationToken cancellationToken = default);
 
+    Task CancelSubscriptionAsync(string subscriptionId, CancellationToken ct = default);
+
     Task<StripeWebhookDto?> VerifyWebhookSignatureAsync(
         string payload,
         string signature,
